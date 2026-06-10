@@ -1,0 +1,14 @@
+Methodology
+
+1. Started DVWA and Burp Suite.
+2. Configured browser traffic through Burp Proxy.
+3. Captured the login request using Burp Suite Intercept.
+4. Analyzed authentication parameters in the request.
+5. Reviewed the login response.
+6. Identified and analyzed the PHPSESSID session cookie.
+7. Examined cookie security attributes including HttpOnly and SameSite.
+8. Captured and reviewed the logout request.
+9. Analyzed the logout response.
+10. Verified session termination after logout.
+11. Attempted to access protected resources after logout.
+12. Documented findings and observations.

@@ -1,0 +1,28 @@
+Burp Suite Project 4 – Session Management & Authentication Analysis
+
+Finding 1:
+Authentication credentials were transmitted using an HTTP POST request to the DVWA login page.
+
+Finding 2:
+The application generated a PHPSESSID cookie after successful authentication.
+
+Finding 3:
+The session cookie contained security attributes including HttpOnly and SameSite.
+
+Finding 4:
+The PHPSESSID cookie was used to maintain the authenticated user session across requests.
+
+Finding 5:
+After successful authentication, the application redirected the user to index.php.
+
+Finding 6:
+The logout request redirected the user to login.php, indicating that the authenticated session was terminated.
+
+Finding 7:
+No new session cookie was observed in the logout response.
+
+Finding 8:
+Attempts to access protected resources after logout required re-authentication, confirming that access control mechanisms were enforced.
+
+Summary:
+The assessment demonstrated how DVWA handles authentication and session management using PHPSESSID cookies. Security attributes such as HttpOnly, Secure, and SameSite were observed, and access to protected resources required a valid authenticated session.
